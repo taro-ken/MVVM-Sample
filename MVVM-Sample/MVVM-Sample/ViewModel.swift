@@ -25,6 +25,8 @@ protocol ViewModelType {
 ///PassthroughSubjectのざっくりした説明 https://tech.amefure.com/swift-combine-passthroughsubject
 /// 両方とも、「値が流れてきたことを検知するモノ」というイメージ
 
+
+/// ロジックは全てViewModelに閉じ込める(APIなどの処理がある場合はViewModelで処理する)
 final class ViewModel: ViewModelInput, ViewModelOutput, ViewModelType {
     
     var input: ViewModelInput { return self }
